@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>渡部隼のポートフォリオ</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -27,11 +27,12 @@
 
   <!-- 自己紹介 -->
   <section class="about">
-    <h2>About</h2>
+    <h2>自己紹介</h2>
 
     <p>
       主にUnityを使ったゲーム制作をしています。<br>
       情報科学専門学校のゲーム開発サークルを創設し代表を務めています。<br>
+      プログラムのアルゴリズムを考えるのが好き。デバックや言語ごとの記述ルールの把握が苦手。勉強中。
 
 
 
@@ -42,22 +43,38 @@
   <!-- 作品一覧 -->
   <section class="works">
 
-    <h2>Works</h2>
+    <h2>制作物</h2>
 
     <div class="works-grid">
 
       <!-- 作品カード -->
       <div class="card">
 
-        <img src="images/.png" alt="WorpRoom!">
+        <img src="images/WoopRoom!.png" alt="WorpRoom!">
 
         <div class="card-content">
 
-          <h3>Action Game</h3>
+          <h3>WorpRoom!</h3>
 
           <p>
             Unityで制作した2Dアクションゲーム。サークルでの共同開発。<br>
-            主にゲームの基本的構造のプログラム全般、仕掛けづくり、ステージ制作、イラストを担当。
+            主にゲームの基本的構造のプログラム全般、仕掛けづくり、ステージ制作、イラストを担当。仲間にはステージ作りを依頼。<br>
+            メンバーが初心者が多いので簡単に作れるようギミックやステージのテンプレートを作り、配置するだけで作れるようにしたり<br>
+            ランダムでステージが切り替わる使用上テストしやすいように工夫した。<br>
+            また、膨大な部屋数でも重くならないようにプレハブ化し、プレイヤーがワープするのではなくリストに登録した部屋がランダム出現するようにすることで
+            見せかけで体験を損なわずかつ最適化するように設計。
+          </p>
+          <br>
+          <h4>ゲームの説明</h4>
+
+           <p>
+            次々とワープする不思議な部屋で決まった回数ワープをこなしクリアを目指す瞬間アクションゲーム。<br>
+            操作:ASWD...移動,カーソル移動<br>
+            　　:スペースキー...ジャンプ,決定<br>
+            　　:バックスペースキー...前の画面に戻る<br>
+            モード:ノーマル...ステージクリア型。レベルとステージを選択することで部屋の難易度とクリアに必要なワープ回数が変化。<br>
+            　　　:エンドレス...スコアタ型。すべての難易度が出現。失敗するまで無限に続く。現時点では未実装だがランキングも実装したい。
+            
           </p>
 
           <p class="tech">
@@ -71,7 +88,7 @@
               Play
             </a>
 
-            <a href="https://github.com/あなたのユーザー名/horror-game"
+            <a href="https://github.com/sabakan999/Warp.Room"
                target="_blank">
               GitHub
             </a>
@@ -81,69 +98,7 @@
       </div>
 
 
-      <!-- 2作品目 -->
-      <div class="card">
-
-        <img src="images/action.png" alt="アクションゲーム">
-
-        <div class="card-content">
-
-          <h3>Action Game</h3>
-
-          <p>
-            スピード感のあるアクションゲーム。
-          </p>
-
-          <p class="tech">
-            Unity / URP
-          </p>
-
-          <div class="buttons">
-
-            <a href="#">
-              Play
-            </a>
-
-            <a href="#">
-              GitHub
-            </a>
-
-          </div>
-        </div>
-      </div>
-
-
-      <!-- 3作品目 -->
-      <div class="card">
-
-        <img src="images/puzzle.png" alt="パズルゲーム">
-
-        <div class="card-content">
-
-          <h3>Puzzle Game</h3>
-
-          <p>
-            ギミック中心のパズルゲーム。
-          </p>
-
-          <p class="tech">
-            Unity / C#
-          </p>
-
-          <div class="buttons">
-
-            <a href="#">
-              Play
-            </a>
-
-            <a href="#">
-              GitHub
-            </a>
-
-          </div>
-        </div>
-      </div>
-
+      
     </div>
   </section>
 
