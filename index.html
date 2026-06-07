@@ -34,9 +34,9 @@
       情報科学専門学校のゲーム開発サークルを創設し代表として約1.5年活動。<br>
       ゲームのアルゴリズムを考えるのが好き。が、いざ書こうとするとデバックや言語ごとの記述ルールの把握が苦手で毎回AIに怒られて直されます。<br>
       中学生、高校生時に生徒会長に就任。非常に有意義で、チーム開発など多くの活動の役に立つ良い経験でした。<br>
-      ゲームの現実とはかけ離れた世界が好きで実は最近のゲームのなんでもリアルに近づけようとし過ぎる傾向に疑問を感じている。<br>
+      ゲームの現実とはかけ離れた世界が好きで最近のゲームのなんでもリアルに近づけようとし過ぎる傾向に少し疑問を感じている。<br>
       ゲームはもっと自由であるべきだと思っている。でもリアル感のあるゲームも技術を感じられて好きではある。<br>
-      結局はゲーム全部大好きである。
+      結局のところゲーム全部大好きである。
 
 
 
@@ -60,7 +60,7 @@
 
         <div class="card-content">
 
-          <h3>WorpRoom!（製作中）</h3>
+          <h3>WorpRoom!（プレver）</h3>
 
           <p>
             Unityで制作した2Dアクションゲーム。サークルでの共同開発。<br>
@@ -69,6 +69,7 @@
             ランダムでステージが切り替わる使用上テストしやすいように工夫した。<br>
             また、膨大な部屋数でも重くならないようにプレハブ化し、プレイヤーがワープするのではなくリストに登録した部屋がランダム出現するようにすることで
             見せかけで体験を損なわずかつ最適化するように設計。<br>
+            現在プレバージョンでこれからギミック、ルームの追加等を実施予定<br>
             生成AIを一部使用した作品です。（chatGPTによるコーディング補助、デバック補助）
           </p>
           <br>
@@ -95,6 +96,109 @@
 </a>
 
             <a href="https://github.com/sabakan999/Warp.Room"
+               target="_blank">
+              GitHub
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+
+        <img src="images/Diver.png" alt="Diver">
+
+        <div class="card-content">
+
+          <h3>DiverDown（製作中）</h3>
+
+          <p>
+            3D探索アクションゲーム。個人製作。<br>
+            プレイヤーは研究所の実験体被験code「DIVER」というダミー人形を操作して研究所の秘密を求め脱走を試みます。<br>
+            地形をすり抜けるという簡単なアクションを根幹に作ったがかなり苦戦している。<br>
+            例えば分厚い壁をすり抜けている時に解除したらどうするかなどの処理に追われていて中々ゲーム的な制作が進行しないでいる。<br>
+            タグやレイヤーを用いてすり抜けの対象などを判定できるように設計。この後にどんなギミック作ってもタグレイヤーに気を付ければ問題なし。ちなみにタイトルは私の好きな漫画のとある能力から。<br>
+            生成AIを一部使用した作品です。（chatGPTによるコーディング補助、デバック補助）
+          </p>
+          <br>
+          <h4>ゲームの説明</h4>
+
+           <p>
+            地形をすり抜けられるキャラを操作して研究所の脱走を目指す３Ｄ探索型ミステリーアクションゲーム。<br><br>
+            操作:ASWD...移動<br>
+            　　:左クリック...ダイブ（地形すり抜け）<br>
+            　　:spaceキー...ジャンプ<br>
+            　　:Eキー...使う、ドアを開ける
+            現状制作中なので説明がないのでここに補足。始まったらダイブを使用することでゲームを進行できます。緑の床はすり抜け不可。変なビリビリした煙に当たると死ぬ。ゴールも何もない。抜けすぎると無限落下する。<br>
+            
+            
+          </p>
+
+          <p class="tech">
+            Unity / C#
+          </p>
+
+          <div class="buttons">
+
+           <a href="games/DiverDown.zip" download>
+  Download
+</a>
+
+            <a href="https://github.com/sabakan999/diver-down"
+               target="_blank">
+              GitHub
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+
+
+       <div class="card">
+
+        <img src="images/TRIUM.png" alt="WarpRoom!">
+
+        <div class="card-content">
+
+          <h3>TRIUM</h3>
+
+          <p>
+            まさかの2Dと3Dが融合したアクションパズルゲーム<br>
+            個人製作。就活生からの質問で飽きるほど聞いた「2Dと3Dはどっちが評価がいい？」という質問にビビッと来てじゃあそのどちらでもあればいいじゃないかと思い制作。<br>
+            設計段階では２Ｄプレイヤーもリジッドボディを使用する予定だったが３Ｄ面を自由に移動できたら面白そうという思いつきだけで専用の重力システムをプログラムするハメに。<br>
+            また他にも２Dの映像を３D面に投射するだけのアイデアもあったがせっかくなら２D、３D、相互に干渉できたら面白そうという思いつきだけで両者の空間を一つの空間に作るハメに。<br>
+            面移動、重力方向変更、２つのカメラこの要素が移動に干渉するので２Dキャラのコードの複雑化が避けられなかったのが課題点。がそれでもロボットと落書きのキャラ二人が協力して進むというコンセプトをうまく実装できたのはすごくよかった。<br>
+            デバックの解説や調べもののみにAIは使用されています。
+          </p>
+          <br>
+          <h4>ゲームの説明</h4>
+
+           <p>
+            平面世界の落書き、ウォードと迷子のロボット、ロドの次元の違う二人を操作して力を合わせてゴールを目指す新ジャンル2D3Dアクションパズル！<br><br>
+            操作:ASWD...「ロド」移動,<br>
+            　　:十字キー...[ウォード]移動<br>
+            　　:spaceキー...「ウォード」ジャンプ<br>
+            　　:Zキー...「ロド」デンジプル（オブジェクト引き寄せ）<br>
+            　　:Rキー...カメラ切り替え<br>
+
+            ※現状ステージが一つしかないですが今後ギミックなどいろいろブラッシュアップしていく予定。<br>
+                      
+            
+          </p>
+
+          <p class="tech">
+            Unity / C#
+          </p>
+
+          <div class="buttons">
+
+           <a href="https://drive.google.com/drive/folders/1SjDAMXgAXV7LIChQQOcrvfHVNtiurTSD?usp=drive_link"target="_blank">
+  Download
+</a>
+
+            <a href="https://github.com/sabakan999/Trick"
                target="_blank">
               GitHub
             </a>
@@ -143,6 +247,11 @@
            <a href=" https://drive.google.com/drive/folders/1enSnpTVzGrZ9GaTayKd7fLZGlDjvoKXE?usp=drive_link
 " target="_blank">
   Download
+   </a>
+
+  <a href="https://github.com/sabakan999/Lastoreders"
+               target="_blank">
+              GitHub
 </a>
 
            
@@ -184,6 +293,9 @@
             <a href="games/commandbomb.zip"Xbox download>Xbox Download</a>
             
               <a href="games/commandbomb forswitch.zip"Switch download>Switch Download</a>
+              <a href="https://github.com/sabakan999/commandbomb"
+               target="_blank">
+              GitHub </a>
 
             
 
@@ -224,6 +336,9 @@
           <div class="buttons">
 
             <a href="games/いわふぇすランカー！.zip"Xbox download>Download</a>
+            <a href="https://github.com/sabakan999/IWAFESrunker"
+               target="_blank">
+              GitHub </a>
             
              
 
@@ -268,6 +383,9 @@
           <div class="buttons">
 
             <a href="games/ラビリンスザコア.zip"Xbox download>Download</a>
+            <a href="https://github.com/sabakan999/labyrinth_the"
+               target="_blank">
+              GitHub </a>
             
              
 
